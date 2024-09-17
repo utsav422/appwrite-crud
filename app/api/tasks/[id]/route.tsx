@@ -1,5 +1,5 @@
 import client from "@/lib/appwrite_client";
-import { Databases, ID, Query } from "appwrite";
+import { Databases } from "appwrite";
 import { NextResponse } from "next/server";
 
 const database = new Databases(client);

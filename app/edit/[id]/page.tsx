@@ -1,9 +1,8 @@
 "use client";
-import { ID } from "appwrite";
-import { useRouter } from "next/navigation";
 import { ChangeEvent, useEffect, useState } from "react";
+import { useRouter } from "next/navigation";
 
-const page = ({ params }: { params: { id: string } }) => {
+const Page = ({ params }: { params: { id: string } }) => {
   const [formData, setFormData] = useState({ term: "", task: "" });
   const [isLoading, setIsLoading] = useState(false);
   const [error, setError] = useState<string | null>(null);
@@ -92,4 +91,4 @@ const page = ({ params }: { params: { id: string } }) => {
   );
 };
 
-export default page;
+export default Page;

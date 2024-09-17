@@ -1,6 +1,6 @@
 "use client";
-import { useRouter } from "next/navigation";
 import React, { ChangeEvent, useState } from "react";
+import { useRouter } from "next/navigation";
 
 const Page = () => {
   const [formData, setFormData] = useState({ term: "", task: "" });
